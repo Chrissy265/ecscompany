@@ -35,3 +35,5 @@ build/
 Ecscompany/src/main/resources/application.properties
 /mvnw
 /mvnw.cmd
+.DS_Store
+*application.properties
