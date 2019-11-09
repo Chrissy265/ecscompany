@@ -18,7 +18,7 @@ public class MyUserDetailService implements UserDetailsService {
 		// TODO Auto-generated method stub
 		User user = repo.findByUsername(username);
 		if (user==null)
-			throw new UsernameNotFoundException("User 404");
+			throw new UsernameNotFoundException("No user found with username " + username);
 		
 		return new UserPrincipal(user);
 	}
