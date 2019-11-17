@@ -1,4 +1,4 @@
-package com.spring.escompany;
+package com.spring.escompany.service;
 /**
  * Get user by username. Login process.
  *
@@ -7,6 +7,8 @@ package com.spring.escompany;
  * @throws UsernameNotFoundException No user found
  */
 
+import com.spring.escompany.model.User;
+import com.spring.escompany.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -1,4 +1,4 @@
-package com.spring.escompany;
+package com.spring.escompany.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -20,14 +20,14 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter{
 	// this is where I get the username and password from the database postgress MyUserDetailServices implement UserDetailsService
 	@Autowired
 	private UserDetailsService UserDetailsService;
-	
+
 	@Bean
 	public AuthenticationProvider authProvider()
 	{
 		//data access object
 		DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
 		provider.setUserDetailsService(UserDetailsService);
-		
+
 		//password stored in the database using the BCrypt
 		provider.setPasswordEncoder(new BCryptPasswordEncoder());
 		return provider;

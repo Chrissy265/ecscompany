@@ -1,4 +1,4 @@
-package com.spring.escompany;
+package com.spring.escompany.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
