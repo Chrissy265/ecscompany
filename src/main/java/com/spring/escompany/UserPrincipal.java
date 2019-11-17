@@ -1,9 +1,9 @@
-package com.spring.escompany.service;
+package com.spring.escompany;
 
 import java.util.Collection;
 import java.util.Collections;
 
-import com.spring.escompany.model.User;
+import com.spring.escompany.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

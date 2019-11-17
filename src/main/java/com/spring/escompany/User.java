@@ -1,4 +1,4 @@
-package com.spring.escompany.model;
+package com.spring.escompany;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
