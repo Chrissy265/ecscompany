@@ -29,11 +29,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-### Spring Tool
-/src/main/resources/application.properties
-Ecscompany/src/main/resources/application.properties
-/mvnw
-/mvnw.cmd
-.DS_Store
-*application.properties
